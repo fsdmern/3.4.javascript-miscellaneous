@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script - Automated Testing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.css"
+      integrity="sha512-qCQt/NQzexVTqJCKEbAAoqFgM+BCUj7Xup9v6UfCIIIaFOndqAtzgyY44l7EhVASxM3xTt6m5nGuOzknqfz3fw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.js"
+      integrity="sha512-y9BJAihw2qk9eu/jwCxVf+sEeAI16WBo8fA1+m7ZuVWs82XE+s0YVmhPk0dpU5VyXdYI2SMZuyrwaNIbjd3fmQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      mocha.setup('bdd');
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"
+      integrity="sha512-FLX8YvKOsZq87X8mhbQoUL0Wp2skFl4I5GwhfQwm0O4qm3gGEYqYcC06Ktqa3bqlhV7+chVoCVgXuvzArjmT+Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      let assert = chai.assert;
+    </script>
+  </head>
+  <body>
+    <!-- Step1: Business Functionality -->
+    <script>
+      /*Function*/
+      function power(m, n) {
+        return m ** n;
+      }
+    </script>
+
+    <!-- Step2: Read Test Cases -->
+    <script src="mytest.js"></script>
+
+    <!-- Step3: This div will have test results from Mocha -->
+    <div id="mocha"></div>
+
+    <!-- Step4: This div will have test results from Mocha -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
