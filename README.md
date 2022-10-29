@@ -6,4 +6,4 @@
 - Common Mistakes
 - Performance
 - Debugging
-- Testing
+- Testing (Mocha, Chai)
